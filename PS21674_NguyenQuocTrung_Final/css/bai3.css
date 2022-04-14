@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.tittle {
+    margin-top: 10px;
+    height: 80px;
+}
+#tittle .khung {
+    margin-top: -17px;
+    border: 0.5px solid rgb(252, 92, 118);
+}
+.tittle h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+thead tr{
+    background-color: rgb(123, 250, 208);
+    text-align: center;
+    font-size: large;
+}
+tbody{
+    text-align: center;
+}
+tbody tr{
+    background-color: rgba(123, 250, 208, 0.251);
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+}
+#mucgia{
+    color: deepskyblue;
+    background-color: rgb(237, 247, 151);
+}
+.tong{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(123, 250, 208);
+}

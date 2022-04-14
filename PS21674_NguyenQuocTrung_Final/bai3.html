@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./bai3.js"></script>
+    <link rel="stylesheet" href="css/bai3.css">
+</head>
+
+<body>
+    <div class="container" align="center" ;>
+        <div class="tittle">
+            <h2>Bán hàng</h2>
+        </div>
+        <select id="mucgia" onchange="changePrice();">
+            <option value="-1">Chọn mức giá</option>
+            <option value="200">Đến 200</option>
+            <option value="400">Đến 400</option>
+            <option value="600">Đến 600</option>  
+            <option value="800">Đến 800</option>
+        </select>
+        <center>
+            <div class="khung"></div>
+        </center>
+        <div style="width: 80% !important;">
+            <table id="table" class="table table-bordered">
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Hàng hoá</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                    <tr id="bodytd">
+                        <td><input type="checkbox" onclick="checkQuantity(0)" name="chon"></td>
+                        <td>Iphone 11</td>
+                        <td name="price">700</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(1)" name="chon"></td>
+                        <td>Samsung</td>
+                        <td name="price">400</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(2)" name="chon"></td>
+                        <td>Nokia</td>
+                        <td name="price">100</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(3)" name="chon"></td>
+                        <td>Sony Xperia</td>
+                        <td name="price">450</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(4)" name="chon"></td>
+                        <td>Motorona</td>
+                        <td name="price">180</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(5)" name="chon"></td>
+                        <td>Oppo</td>
+                        <td name="price">600</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(6)" name="chon"></td>
+                        <td>Bphone</td>
+                        <td name="price">90</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="checkQuantity(7)" name="chon"></td>
+                        <td>TTCR</td>
+                        <td name="price">999999</td>
+                        <td><input disabled contenteditable="true" onkeyup="calculateMoney(this)" name="soLuong"
+                                value="0">
+                        </td>
+                        <td name="thanhtien"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="tong">
+                        <td colspan="4">Tổng</td>
+                        <td id="tinhtong">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

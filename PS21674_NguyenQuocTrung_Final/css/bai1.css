@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.khung{
+    width: 500px;
+    height: 700px;
+    background-color: rgba(206, 36, 36, 0.87);
+    float: left;
+    margin-left: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+.khung-tren{
+    width: 100%;
+    height: 150px;
+    float: left;
+    text-align: center;
+    color: aliceblue;
+}
+.chutren{
+    margin-top: 30px;
+}
+.chuduoi{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.khung-duoi{
+    width: 100%;
+    height: 550px;
+    float: left;
+    text-align: center;
+    color: aliceblue;
+}
+.nhap{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+}
+.a{
+    margin-top: 30px;
+}
+.b{
+    margin-top: 30px;
+}
+.c{
+    margin-top: 30px;
+}
+.chon{
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+}
+button{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgba(75, 224, 224, 0.808); */
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.ketqua{
+    width: 80%;
+    height: 40%;
+    background-color: rgba(206, 36, 36, 0.87);
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+}
+.thoigian{
+    width: 100%;
+    height: 10%;
+    float: left;
+    color: yellow;
+    font-size: 25px;
+    margin-top: 15px;
+}

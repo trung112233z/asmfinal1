@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS21674 | Assigment </title>
+    <link rel="stylesheet" href="css/bai1.css">
+    <script src="./bai1.js"></script>
+</head>
+
+<body>
+    <div class="khung">
+        <div class="khung-tren">
+            <div class="chutren">
+                <h2>GIẢI PHƯƠNG TRÌNH ax<sup>2</sup>+bx+c+0</h2>
+            </div>
+            <div class="chuduoi">
+                <p>Số lần giải: <span id="soLanGiai"></span> </p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="khung-duoi">
+            <form>
+                <div class="nhap">
+                    <div class="a">
+                        <p><span>Nhập a: </span> <input id="a" disabled /></p>
+                    </div>
+                    <div class="b">
+                        <p><span>Nhập b: </span> <input id="b" disabled /></p>
+                    </div>
+                    <div class="c">
+                        <p><span>Nhập c: </span> <input id="c" disabled /></p>
+                    </div>
+                </div>
+                <div class="chon">
+                    <button id="giaiPT" onclick="giai();dem();lockButton(true);" disabled>Giải PT</button>
+                    <button type="button" id="chonSo" onclick="random();lockButton(false);" >Chọn số</button>
+                </div>
+            </form>
+            <div class="ketqua">
+                <div id="ketqua"></div>
+            </div>
+            <div class="thoigian">
+                <div id="time"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
